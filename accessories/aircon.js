@@ -29,8 +29,8 @@ class AirConAccessory extends BroadlinkRMAccessory {
     // if (state.targetTemperature === undefined) state.targetTemperature = minTemperature || 0;
     if (state.firstTemperatureUpdate === undefined) state.firstTemperatureUpdate = true;
 
-    config.minTemperature = minTemperature || 0;
-    config.maxTemperature = maxTemperature || 30;
+    config.minTemperature = minTemperature || 10;
+    config.maxTemperature = maxTemperature || 40;
 
     if (config.temperatureDisplayUnits === undefined) config.temperatureDisplayUnits = (units && units.toLowerCase() === 'f') ? Characteristic.TemperatureDisplayUnits.FAHRENHEIT : Characteristic.TemperatureDisplayUnits.CELSIUS;
 
